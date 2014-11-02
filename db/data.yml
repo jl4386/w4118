@@ -1,0 +1,1177 @@
+
+---
+apply:
+  columns:
+  - position_id
+  - user_id
+  - status
+  records: 
+  - - 1
+    - '3'
+    - Applying
+  - - 1
+    - '4'
+    - Not started
+  - - 1
+    - '9'
+    - Not started
+  - - 2
+    - '1'
+    - Not started
+  - - 3
+    - '2'
+    - Waiting for result
+  - - 3
+    - '6'
+    - Finished
+  - - 4
+    - '5'
+    - Applying
+  - - 5
+    - '8'
+    - Applying
+  - - 6
+    - '1'
+    - Applying
+  - - 7
+    - '10'
+    - Waiting for result
+  - - 8
+    - '7'
+    - Applying
+  - - 9
+    - '1'
+    - Applying
+
+---
+career_fairs:
+  columns:
+  - activity_id
+  - fair_id
+  - person_in_charge
+  records: 
+  - - 1
+    - 1
+    - Raymond Lynch
+  - - 2
+    - 2
+    - Ryan Morgan
+  - - 5
+    - 4
+    - Kimberly Campbell
+  - - 7
+    - 5
+    - Ralph Stone
+  - - 8
+    - 3
+    - Martin Gomez
+  - - 9
+    - 6
+    - Richard Johnson
+  - - 10
+    - 7
+    - Lawrence Hill
+  - - 11
+    - 8
+    - Jimmy Fernandez
+  - - 14
+    - 9
+    - Ralph Mcdonald
+  - - 18
+    - 10
+    - Andrew Peterson
+
+---
+companies:
+  columns:
+  - company_id
+  - company_name
+  - headquarter_location
+  - website
+  records: 
+  - - 1
+    - Google
+    - Mountain View, CA
+    - http://www.google.com
+  - - 2
+    - Goldman
+    - Manhattan, NY
+    - http://www.goldmansachs.com
+  - - 3
+    - Microsoft
+    - Redmond, WA
+    - http://www.mrcrosoft.com
+  - - 4
+    - FoodGem
+    - Rockaway Blvd Ozone Park, NY
+    - http://www.foodgems.com
+  - - 5
+    - Gap International
+    - Springfield, PA
+    - http://www.gapinternational.com
+  - - 6
+    - Blackrock
+    - New York City, NY
+    - http://www.blackrock.com
+  - - 7
+    - Citi
+    - New York City, NY
+    - http://www.citigroup.com
+  - - 8
+    - Giva Inc
+    - Santa Clara, CA
+    - http://www.givainc.com
+  - - 9
+    - Morgan Stanley
+    - New York City, NY
+    - http://morganstanley.com
+  - - 10
+    - Apple
+    - Cupertino, CA
+    - http://www.apple.com
+
+---
+documents:
+  columns:
+  - document_id
+  - document_name
+  records: 
+  - - 1
+    - Resume
+  - - 2
+    - Personal Statement
+  - - 3
+    - Reference Letter
+  - - 4
+    - Cover Letter
+  - - 5
+    - Application Form
+  - - 6
+    - Degree Certificate
+  - - 7
+    - Transcript
+  - - 8
+    - Certificate of Prize
+  - - 9
+    - Certificate of Study
+  - - 10
+    - Photo ID
+
+---
+info_sessions:
+  columns:
+  - activity_id
+  - session_id
+  - food
+  - contact_email
+  - host_company
+  records: 
+  - - 3
+    - 1
+    - Pizza
+    - career@google.com
+    - 1
+  - - 4
+    - 2
+    - Beverage
+    - career@google.com
+    - 1
+  - - 6
+    - 3
+    - Pizza
+    - hr@blackrock.com
+    - 6
+  - - 12
+    - 4
+    - 
+    - swoods@citi.com
+    - 7
+  - - 13
+    - 8
+    - Sandwich
+    - info@outlook.com
+    - 3
+  - - 15
+    - 5
+    - Buffet
+    - gapcareer@google.com
+    - 5
+  - - 16
+    - 6
+    - 
+    - info@apple.com
+    - 10
+  - - 17
+    - 7
+    - 
+    - mscareer@google.com
+    - 9
+  - - 19
+    - 9
+    - Buffet
+    - 
+    - 9
+  - - 20
+    - 10
+    - Buffet
+    - ms@outlook.com
+    - 3
+
+---
+participate:
+  columns:
+  - company_id
+  - activity_id
+  - contact_email
+  - booth_number
+  records: 
+  - - 1
+    - 1
+    - mike@google.com
+    - '1'
+  - - 1
+    - 10
+    - mike@google.com
+    - '1'
+  - - 1
+    - 14
+    - mike@google.com
+    - '1'
+  - - 1
+    - 18
+    - mike@google.com
+    - '1'
+  - - 2
+    - 2
+    - grace@goldmansachs.com
+    - '1'
+  - - 2
+    - 10
+    - grace@goldmansachs.com
+    - '2'
+  - - 2
+    - 14
+    - grace@goldmansachs.com
+    - '2'
+  - - 3
+    - 1
+    - career@microsoft.com
+    - '2'
+  - - 3
+    - 8
+    - career@microsoft.com
+    - '1'
+  - - 3
+    - 11
+    - career@microsoft.com
+    - '1'
+  - - 4
+    - 2
+    - careers@foodgem.com
+    - '2'
+  - - 4
+    - 5
+    - careers@foodgem.com
+    - '1'
+  - - 5
+    - 2
+    - career@gapinternational.com
+    - '3'
+  - - 5
+    - 5
+    - career@gapinternational.com
+    - '2'
+  - - 5
+    - 7
+    - career@gapinternational.com
+    - '3'
+  - - 5
+    - 8
+    - career@gapinternational.com
+    - '2'
+  - - 5
+    - 14
+    - career@gapinternational.com
+    - '3'
+  - - 5
+    - 18
+    - career@gapinternational.com
+    - '2'
+  - - 6
+    - 1
+    - careers@blackrock.com
+    - '3'
+  - - 6
+    - 5
+    - careers@blackrock.com
+    - '3'
+  - - 6
+    - 7
+    - careers@blackrock.com
+    - '2'
+  - - 6
+    - 8
+    - careers@blackrock.com
+    - '3'
+  - - 6
+    - 9
+    - careers@blackrock.com
+    - '1'
+  - - 7
+    - 2
+    - marry@citi.com
+    - '4'
+  - - 8
+    - 9
+    - job@givainc.com
+    - '2'
+  - - 8
+    - 11
+    - job@givainc.com
+    - '2'
+  - - 8
+    - 18
+    - job@givainc.com
+    - '3'
+  - - 9
+    - 11
+    - apply@morganstanley.com
+    - '3'
+  - - 10
+    - 2
+    - rl44509@apple.com
+    - '5'
+  - - 10
+    - 7
+    - rl44509@apple.com
+    - '1'
+  - - 10
+    - 9
+    - rl44509@apple.com
+    - '3'
+
+---
+positions:
+  columns:
+  - position_id
+  - position_name
+  - company_id
+  - category
+  - type
+  - deadline
+  records: 
+  - - 1
+    - Software intern
+    - 1
+    - IT
+    - Summer Internship
+    - 2014-12-01 00:00:00.000000000 Z
+  - - 2
+    - Software engineer
+    - 1
+    - IT
+    - Fulltime
+    - 2014-12-14 00:00:00.000000000 Z
+  - - 3
+    - Technical intern
+    - 2
+    - IT
+    - Summer Internship
+    - 2014-10-01 00:00:00.000000000 Z
+  - - 4
+    - Summer Analyst
+    - 2
+    - Analyst
+    - Summer Internship
+    - 2014-11-15 00:00:00.000000000 Z
+  - - 5
+    - Analyst
+    - 2
+    - Analyst
+    - Fulltime
+    - 2014-11-15 00:00:00.000000000 Z
+  - - 6
+    - Software intern
+    - 3
+    - IT
+    - Summer Intership
+    - 2014-11-20 00:00:00.000000000 Z
+  - - 7
+    - Marketing intern
+    - 4
+    - Marketing
+    - Summer Internship
+    - 2014-10-20 00:00:00.000000000 Z
+  - - 8
+    - Business Intern
+    - 4
+    - Business
+    - Summer Internship
+    - 2014-11-20 00:00:00.000000000 Z
+  - - 9
+    - Marketing intern
+    - 5
+    - Marketing
+    - Summer Internship
+    - 2014-11-01 00:00:00.000000000 Z
+  - - 10
+    - Director of marketing
+    - 5
+    - Marketing
+    - Fulltime
+    - 2014-11-01 00:00:00.000000000 Z
+  - - 11
+    - Summer Analyst
+    - 6
+    - Analyst
+    - Summer Internship
+    - 2014-11-15 00:00:00.000000000 Z
+  - - 12
+    - Technical developer
+    - 6
+    - IT
+    - Fulltime
+    - 2014-11-15 00:00:00.000000000 Z
+  - - 13
+    - Summer Analyst
+    - 7
+    - Analyst
+    - Summer Internship
+    - 2014-12-01 00:00:00.000000000 Z
+  - - 14
+    - Director of finance
+    - 7
+    - Finance
+    - Fulltime
+    - 2014-12-15 00:00:00.000000000 Z
+  - - 15
+    - Fall Writing Internship
+    - 8
+    - Writing
+    - Fall Internship
+    - 2014-11-14 00:00:00.000000000 Z
+  - - 16
+    - Technical intern
+    - 9
+    - IT
+    - Summer Internship
+    - 2014-12-30 00:00:00.000000000 Z
+  - - 17
+    - Analyst
+    - 9
+    - Analyst
+    - Fulltime
+    - 2014-12-30 00:00:00.000000000 Z
+  - - 18
+    - Software engineer
+    - 10
+    - IT
+    - Fulltime
+    - 2014-11-12 00:00:00.000000000 Z
+  - - 19
+    - Marketing intern
+    - 10
+    - Marketing
+    - Summer Internship
+    - 2014-11-15 00:00:00.000000000 Z
+
+---
+possess:
+  columns:
+  - user_id
+  - skill_id
+  - proficiency
+  records: 
+  - - '1'
+    - 1
+    - Basic
+  - - '1'
+    - 6
+    - Intermediate
+  - - '1'
+    - 7
+    - Advanced
+  - - '10'
+    - 8
+    - Intermediate
+  - - '10'
+    - 15
+    - Advanced
+  - - '2'
+    - 5
+    - Advanced
+  - - '2'
+    - 13
+    - Intermediate
+  - - '3'
+    - 5
+    - Intermediate
+  - - '3'
+    - 6
+    - Intermediate
+  - - '3'
+    - 10
+    - Advanced
+  - - '4'
+    - 1
+    - Advanced
+  - - '4'
+    - 2
+    - Intermediate
+  - - '4'
+    - 4
+    - Basic
+  - - '5'
+    - 1
+    - Intermediate
+  - - '5'
+    - 2
+    - Intermediate
+  - - '5'
+    - 3
+    - Basic
+  - - '5'
+    - 8
+    - Intermediate
+  - - '6'
+    - 5
+    - Intermediate
+  - - '6'
+    - 8
+    - Advanced
+  - - '7'
+    - 5
+    - Intermediate
+  - - '7'
+    - 6
+    - Advanced
+  - - '7'
+    - 13
+    - Advanced
+  - - '8'
+    - 9
+    - Intermediate
+  - - '8'
+    - 10
+    - Advanced
+  - - '8'
+    - 11
+    - Intermediate
+  - - '8'
+    - 12
+    - Intermediate
+  - - '9'
+    - 1
+    - Advanced
+  - - '9'
+    - 8
+    - Advanced
+
+---
+prefer:
+  columns:
+  - position_id
+  - skill_id
+  - proficiency
+  - importance
+  records: 
+  - - 1
+    - 1
+    - Advanced
+    - Very important
+  - - 1
+    - 2
+    - Basic
+    - Moderate
+  - - 1
+    - 3
+    - 
+    - Moderate
+  - - 2
+    - 1
+    - Advanced
+    - Very important
+  - - 2
+    - 2
+    - Advanced
+    - Moderate
+  - - 2
+    - 3
+    - Advanced
+    - Moderate
+  - - 3
+    - 1
+    - Advanced
+    - Important
+  - - 3
+    - 3
+    - Advanced
+    - Moderate
+  - - 4
+    - 5
+    - 
+    - Very important
+  - - 4
+    - 6
+    - Mid-level
+    - Moderate
+  - - 4
+    - 10
+    - Basic
+    - Moderate
+  - - 5
+    - 6
+    - 
+    - Very important
+  - - 5
+    - 10
+    - Mid-level
+    - Moderate
+  - - 5
+    - 12
+    - Advanced
+    - Moderate
+  - - 6
+    - 2
+    - 
+    - Moderate
+  - - 6
+    - 3
+    - Advanced
+    - Moderate
+  - - 6
+    - 15
+    - Advanced
+    - Important
+  - - 7
+    - 5
+    - 
+    - Moderate
+  - - 7
+    - 8
+    - Advanced
+    - Moderate
+  - - 8
+    - 8
+    - 
+    - Moderate
+  - - 8
+    - 12
+    - 
+    - Important
+  - - 8
+    - 14
+    - 
+    - Important
+  - - 9
+    - 5
+    - 
+    - Moderate
+  - - 9
+    - 6
+    - 
+    - Moderate
+  - - 10
+    - 9
+    - Advanced
+    - Very important
+  - - 10
+    - 13
+    - 
+    - Important
+  - - 11
+    - 5
+    - 
+    - Moderate
+  - - 11
+    - 9
+    - Advanced
+    - Moderate
+  - - 12
+    - 10
+    - 
+    - Moderate
+  - - 12
+    - 12
+    - Advanced
+    - Important
+  - - 13
+    - 1
+    - 
+    - Moderate
+  - - 13
+    - 2
+    - 
+    - Moderate
+  - - 13
+    - 3
+    - Advanced
+    - Important
+  - - 14
+    - 8
+    - 
+    - Very important
+  - - 14
+    - 11
+    - Basic
+    - Moderate
+  - - 15
+    - 4
+    - 
+    - Moderate
+  - - 15
+    - 5
+    - Mid-level
+    - Moderate
+  - - 15
+    - 6
+    - Advanced
+    - Important
+  - - 16
+    - 1
+    - 
+    - Moderate
+  - - 16
+    - 2
+    - 
+    - Moderate
+  - - 16
+    - 3
+    - Advanced
+    - Moderate
+  - - 16
+    - 8
+    - 
+    - Moderate
+  - - 17
+    - 4
+    - Advanced
+    - Very important
+  - - 17
+    - 5
+    - Mid-level
+    - Moderate
+  - - 17
+    - 6
+    - 
+    - Moderate
+  - - 17
+    - 7
+    - Basic
+    - Moderate
+  - - 18
+    - 1
+    - Mid-level
+    - Important
+  - - 18
+    - 2
+    - Advanced
+    - Moderate
+  - - 18
+    - 3
+    - 
+    - Moderate
+  - - 18
+    - 6
+    - Advanced
+    - Important
+  - - 18
+    - 8
+    - Advanced
+    - Important
+  - - 19
+    - 4
+    - 
+    - Moderate
+  - - 19
+    - 6
+    - Basic
+    - Moderate
+  - - 19
+    - 8
+    - Mid-level
+    - Moderate
+  - - 19
+    - 9
+    - Advanced
+    - Moderate
+
+---
+recruitment_activities:
+  columns:
+  - activity_id
+  - activity_name
+  - location
+  - dress_code
+  - activity_date
+  records: 
+  - - 1
+    - CIVIL CAREER FAIR
+    - NWS Building
+    - 
+    - 2014-11-14 00:00:00.000000000 Z
+  - - 2
+    - SPRING CAREER FAIR
+    - NWS Building
+    - formal
+    - 2015-04-10 00:00:00.000000000 Z
+  - - 3
+    - network session
+    - CS Lounge
+    - formal
+    - 2015-09-07 00:00:00.000000000 Z
+  - - 4
+    - tech panel
+    - CS Lounge
+    - 
+    - 2015-07-21 00:00:00.000000000 Z
+  - - 5
+    - ENGINEERING CAREER FAIR
+    - Lerner Hall
+    - smart casual
+    - 2014-11-28 00:00:00.000000000 Z
+  - - 6
+    - network session
+    - NWS Building
+    - formal
+    - 2015-02-12 00:00:00.000000000 Z
+  - - 7
+    - 'BUSINESS SCHOOL CAREER FAIR '
+    - Lerner Hall
+    - smart casual
+    - 2014-09-20 00:00:00.000000000 Z
+  - - 8
+    - 'SCIENCE FALL CAREER FAIR '
+    - Lerner HALL
+    - smart casual
+    - 2014-11-15 00:00:00.000000000 Z
+  - - 9
+    - JOB FAIR
+    - 
+    - smart casual
+    - 2014-10-23 00:00:00.000000000 Z
+  - - 10
+    - 'LAW SCHOOL FALL CAREER FAIR '
+    - 
+    - formal
+    - 2015-10-18 00:00:00.000000000 Z
+  - - 11
+    - FALL CAREER FAIR
+    - NWS Building
+    - smart casual
+    - 2015-02-12 00:00:00.000000000 Z
+  - - 12
+    - network session
+    - 
+    - smart casual
+    - 2014-11-23 00:00:00.000000000 Z
+  - - 13
+    - network session
+    - NWS Building
+    - formal
+    - 2015-10-17 00:00:00.000000000 Z
+  - - 14
+    - IT JOB FAIR
+    - 
+    - formal
+    - 2015-01-14 00:00:00.000000000 Z
+  - - 15
+    - tech panel
+    - CS Lounge
+    - smart casual
+    - 2015-10-24 00:00:00.000000000 Z
+  - - 16
+    - network session
+    - 
+    - smart casual
+    - 2015-01-20 00:00:00.000000000 Z
+  - - 17
+    - tech talk
+    - Davis Auditorium
+    - formal
+    - 2015-04-09 00:00:00.000000000 Z
+  - - 18
+    - ENGINEER SPRING CAREER FAIR
+    - NWS Building
+    - smart casual
+    - 2015-02-11 00:00:00.000000000 Z
+  - - 19
+    - network session
+    - CS Lounge
+    - smart casual
+    - 2015-10-01 00:00:00.000000000 Z
+  - - 20
+    - Info session
+    - CS Lounge
+    - smart casual
+    - 2015-05-30 00:00:00.000000000 Z
+
+---
+require:
+  columns:
+  - position_id
+  - document_id
+  - type
+  records: 
+  - - 1
+    - 1
+    - PDF
+  - - 1
+    - 2
+    - PDF
+  - - 1
+    - 5
+    - ONLINE
+  - - 2
+    - 1
+    - PDF
+  - - 2
+    - 3
+    - 
+  - - 3
+    - 1
+    - PDF
+  - - 3
+    - 6
+    - 
+  - - 4
+    - 1
+    - PDF
+  - - 4
+    - 7
+    - 
+  - - 5
+    - 1
+    - PDF
+  - - 5
+    - 2
+    - WORD
+  - - 6
+    - 1
+    - PDF
+  - - 6
+    - 2
+    - PDF
+  - - 6
+    - 5
+    - ONLINE
+  - - 7
+    - 1
+    - PDF
+  - - 7
+    - 5
+    - ONLINE
+  - - 8
+    - 1
+    - PDF
+  - - 8
+    - 3
+    - PDF
+  - - 8
+    - 5
+    - PDF
+  - - 9
+    - 1
+    - PDF
+  - - 9
+    - 4
+    - PDF
+  - - 9
+    - 5
+    - ONLINE
+  - - 9
+    - 8
+    - PDF
+  - - 10
+    - 1
+    - PDF
+  - - 10
+    - 2
+    - PDF
+  - - 10
+    - 3
+    - PDF
+  - - 10
+    - 4
+    - PDF
+  - - 10
+    - 9
+    - PDF
+  - - 11
+    - 1
+    - PDF
+  - - 11
+    - 3
+    - 
+  - - 12
+    - 1
+    - PDF
+  - - 12
+    - 2
+    - 
+  - - 13
+    - 1
+    - PDF
+  - - 14
+    - 1
+    - WORD
+  - - 15
+    - 1
+    - 
+  - - 15
+    - 3
+    - 
+  - - 15
+    - 5
+    - ONLINE
+  - - 16
+    - 1
+    - PDF
+  - - 16
+    - 2
+    - 
+  - - 18
+    - 1
+    - PDF
+  - - 18
+    - 2
+    - 
+  - - 19
+    - 1
+    - PDF
+  - - 19
+    - 3
+    - 
+  - - 19
+    - 5
+    - ONLINE
+
+---
+skills:
+  columns:
+  - skill_id
+  - skill_name
+  records: 
+  - - 1
+    - C/C++
+  - - 2
+    - Python
+  - - 3
+    - Java
+  - - 4
+    - Microsoft Office
+  - - 5
+    - English communication
+  - - 6
+    - English writing
+  - - 7
+    - Interpersonal
+  - - 8
+    - Mathematical Ability
+  - - 9
+    - Knowledge of marketing
+  - - 10
+    - Knowledge of finance
+  - - 11
+    - Leardership
+  - - 12
+    - Analytical ability
+  - - 13
+    - Knowledge of law
+  - - 14
+    - Photoshop
+  - - 15
+    - Knowledge of biology
+
+---
+users:
+  columns:
+  - user_id
+  - name
+  - email
+  - major
+  - degree
+  - year_of_graduation
+  - date_of_birth
+  - overall_gpa
+  records: 
+  - - '1'
+    - Laura Griffin
+    - lgriffin0@fda.com
+    - ME
+    - BA
+    - 2017
+    - 1992-10-03 00:00:00.000000000 Z
+    - 2.45
+  - - '10'
+    - Phillip King
+    - pking9@columbia.edu
+    - BIO
+    - MS
+    - 2019
+    - 1989-06-07 00:00:00.000000000 Z
+    - 2.18
+  - - '2'
+    - Terry Williamson
+    - williamson@gmail.com
+    - LAW
+    - BS
+    - 2016
+    - 1991-06-10 00:00:00.000000000 Z
+    - 2.54
+  - - '3'
+    - Susan Mills
+    - smills2@opera.com
+    - ECON
+    - BS
+    - 2016
+    - 1992-02-12 00:00:00.000000000 Z
+    - 2.27
+  - - '4'
+    - Rose Burns
+    - rburns3@gmail.com
+    - CS
+    - PHD
+    - 2018
+    - 1994-05-27 00:00:00.000000000 Z
+    - 3.16
+  - - '5'
+    - Joyce Wallace
+    - wallace4@ucoz.com
+    - EE
+    - BS
+    - 2014
+    - 1992-04-13 00:00:00.000000000 Z
+    - 2.45
+  - - '6'
+    - Bobby Greene
+    - bgreene5@go.com
+    - ME
+    - BA
+    - 2016
+    - 1991-08-30 00:00:00.000000000 Z
+    - 2.59
+  - - '7'
+    - Timothy Ford
+    - tford6@hotmail.com
+    - LAW
+    - MS
+    - 2014
+    - 1993-06-27 00:00:00.000000000 Z
+    - 2.4
+  - - '8'
+    - Adam Jacobs
+    - ajacobs7@qq.com
+    - ECON
+    - BS
+    - 2016
+    - 1988-11-03 00:00:00.000000000 Z
+    - 3.08
+  - - '9'
+    - Lori Hunt
+    - lhunt8@qq.com
+    - CS
+    - BA
+    - 2019
+    - 1993-02-26 00:00:00.000000000 Z
+    - 2.8
