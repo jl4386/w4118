@@ -1,2 +1,34 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<h1>Sign up</h1>
+
+
+<%= form_for(@user) do |f| %>
+	<%=f.label :uni%>
+	<%=f.text_field :user_id%>
+
+	<%=f.label :name%>
+	<%=f.text_field :name%>
+	
+	<%=f.label :email%>
+	<%=f.text_field :email%>
+
+	<%=f.label :password%>
+	<%=f.password_field :password%>
+
+	<%=f.label :major%>
+	<%=f.text_field :major%>
+
+	<%=f.label :degree%>
+	<%=f.text_field :degree%>
+
+	<%=f.label :year_of_graduation%>
+	<%=f.text_field :year_of_graduation%>
+
+
+	<%=f.label :date_of_birth%>
+	<%=f.text_field :date_of_birth%>
+
+	<%=f.label :overall_gpa%>
+	<%=f.text_field :overall_gpa%>
+	
+	<%= f.submit "create my account", class: "btn btn-large btn-primary" %>
+<%end%>
