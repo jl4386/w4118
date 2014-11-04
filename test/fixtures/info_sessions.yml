@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  activity_id: MyString
+  session_id: 1
+  food: MyString
+  contact_email: MyString
+  host_company: 1
+
+two:
+  activity_id: MyString
+  session_id: 1
+  food: MyString
+  contact_email: MyString
+  host_company: 1

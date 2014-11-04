@@ -1,0 +1,31 @@
+<h1>Listing info_sessions</h1>
+
+<table>
+  <tr>
+    <th>Activity</th>
+    <th>Session</th>
+    <th>Food</th>
+    <th>Contact email</th>
+    <th>Host company</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @info_sessions.each do |info_session| %>
+  <tr>
+    <td><%= info_session.activity_id %></td>
+    <td><%= info_session.session_id %></td>
+    <td><%= info_session.food %></td>
+    <td><%= info_session.contact_email %></td>
+    <td><%= info_session.host_company %></td>
+    <td><%= link_to 'Show', info_session %></td>
+    <td><%= link_to 'Edit', edit_info_session_path(info_session) %></td>
+    <td><%= link_to 'Destroy', info_session, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Info session', new_info_session_path %>

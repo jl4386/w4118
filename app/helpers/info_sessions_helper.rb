@@ -1,0 +1,2 @@
+module InfoSessionsHelper
+end

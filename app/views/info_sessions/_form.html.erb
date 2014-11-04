@@ -1,0 +1,37 @@
+<%= form_for(@info_session) do |f| %>
+  <% if @info_session.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@info_session.errors.count, "error") %> prohibited this info_session from being saved:</h2>
+
+      <ul>
+      <% @info_session.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :activity_id %><br />
+    <%= f.text_field :activity_id %>
+  </div>
+  <div class="field">
+    <%= f.label :session_id %><br />
+    <%= f.number_field :session_id %>
+  </div>
+  <div class="field">
+    <%= f.label :food %><br />
+    <%= f.text_field :food %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_email %><br />
+    <%= f.text_field :contact_email %>
+  </div>
+  <div class="field">
+    <%= f.label :host_company %><br />
+    <%= f.number_field :host_company %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

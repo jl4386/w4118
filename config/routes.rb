@@ -1,4 +1,13 @@
 W4111::Application.routes.draw do
+  resources :skills
+
+
+  resources :info_sessions
+
+
+  resources :documents
+
+
   resources :career_fairs
 
 

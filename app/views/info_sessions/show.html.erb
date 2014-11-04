@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Activity:</b>
+  <%= @info_session.activity_id %>
+</p>
+
+<p>
+  <b>Session:</b>
+  <%= @info_session.session_id %>
+</p>
+
+<p>
+  <b>Food:</b>
+  <%= @info_session.food %>
+</p>
+
+<p>
+  <b>Contact email:</b>
+  <%= @info_session.contact_email %>
+</p>
+
+<p>
+  <b>Host company:</b>
+  <%= @info_session.host_company %>
+</p>
+
+
+<%= link_to 'Edit', edit_info_session_path(@info_session) %> |
+<%= link_to 'Back', info_sessions_path %>
