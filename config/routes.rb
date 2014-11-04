@@ -1,4 +1,7 @@
 W4111::Application.routes.draw do
+  resources :career_fairs
+
+
   resources :companies
 
 

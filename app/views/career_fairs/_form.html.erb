@@ -1,0 +1,29 @@
+<%= form_for(@career_fair) do |f| %>
+  <% if @career_fair.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@career_fair.errors.count, "error") %> prohibited this career_fair from being saved:</h2>
+
+      <ul>
+      <% @career_fair.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :activity_id %><br />
+    <%= f.text_field :activity_id %>
+  </div>
+  <div class="field">
+    <%= f.label :fair_id %><br />
+    <%= f.number_field :fair_id %>
+  </div>
+  <div class="field">
+    <%= f.label :person_in_charge %><br />
+    <%= f.text_field :person_in_charge %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
