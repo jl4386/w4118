@@ -2,33 +2,53 @@
 
 
 <%= form_for(@user) do |f| %>
-	<%=f.label :uni%>
-	<%=f.text_field :user_id%>
+	 <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this position from being saved:</h2>
 
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field"><br />
+	<%=f.label :uni%><br />
+	<%=f.text_field :user_id%>
+ </div>
+  <div class="field"><br />
 	<%=f.label :name%>
 	<%=f.text_field :name%>
-	
+	 </div>
+  <div class="field"><br />
 	<%=f.label :email%>
 	<%=f.text_field :email%>
-
+ </div>
+  <div class="field"><br />
 	<%=f.label :password%>
 	<%=f.password_field :password%>
-
+ </div>
+  <div class="field"><br />
 	<%=f.label :major%>
 	<%=f.text_field :major%>
-
+ </div>
+  <div class="field"><br />
 	<%=f.label :degree%>
 	<%=f.text_field :degree%>
-
+ </div>
+  <div class="field"><br />
 	<%=f.label :year_of_graduation%>
 	<%=f.text_field :year_of_graduation%>
+ </div>
 
-
+  <div class="field"><br />
 	<%=f.label :date_of_birth%>
-	<%=f.text_field :date_of_birth%>
-
+	<%=f.datetime_select:date_of_birth%>
+ </div>
+  <div class="field"><br />
 	<%=f.label :overall_gpa%>
 	<%=f.text_field :overall_gpa%>
-	
+</div>
 	<%= f.submit "create my account", class: "btn btn-large btn-primary" %>
 <%end%>

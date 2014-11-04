@@ -1,0 +1,41 @@
+<%= form_for(@position) do |f| %>
+  <% if @position.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@position.errors.count, "error") %> prohibited this position from being saved:</h2>
+
+      <ul>
+      <% @position.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :position_id %><br />
+    <%= f.text_field :position_id %>
+  </div>
+  <div class="field">
+    <%= f.label :position_name %><br />
+    <%= f.text_field :position_name %>
+  </div>
+  <div class="field">
+    <%= f.label :company_id %><br />
+    <%= f.number_field :company_id %>
+  </div>
+  <div class="field">
+    <%= f.label :category %><br />
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :deadline %><br />
+    <%= f.datetime_select :deadline %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

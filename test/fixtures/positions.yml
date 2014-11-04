@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  position_id: MyString
+  position_name: MyString
+  company_id: 1
+  category: MyString
+  type: 
+  deadline: 2014-11-04 13:05:13
+
+two:
+  position_id: MyString
+  position_name: MyString
+  company_id: 1
+  category: MyString
+  type: 
+  deadline: 2014-11-04 13:05:13

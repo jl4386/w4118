@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Position:</b>
+  <%= @position.position_id %>
+</p>
+
+<p>
+  <b>Position name:</b>
+  <%= @position.position_name %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @position.company_id %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @position.category %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @position.type %>
+</p>
+
+<p>
+  <b>Deadline:</b>
+  <%= @position.deadline %>
+</p>
+
+
+<%= link_to 'Edit', edit_position_path(@position) %> |
+<%= link_to 'Back', positions_path %>
