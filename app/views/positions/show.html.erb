@@ -32,7 +32,7 @@
 
 <p>
 <table>
-  <caption><b>Required documents</b></caption>
+  <caption style="text-align:left"><b>Required documents:</b></caption>
   <tr>
     <th>Document Name</th>
     <th>Document Type</th>
@@ -42,11 +42,12 @@
     <td><%= Document.find_by_document_id(require.document_id).document_name%></td>
     <td><%= require.doc_type %><br /></td>
 <% end %>
+<table>
 </p>
 
 <p>
 <table>
-  <caption><b>Skills Requirement</b></caption>
+  <caption style="text-align:left"><b>Skills Requirement:</b></caption>
   <tr>
     <th>Skill</th>
     <th>Proficiency</th>

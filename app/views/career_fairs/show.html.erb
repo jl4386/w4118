@@ -38,7 +38,7 @@
 <p>
 <b>Company List:</b> <br />
 
-<% @career_fair.paticipates.each do |company| %>
+<% @career_fair.participates.each do |company| %>
     <%= Company.find_by_activity_id(company.activity_id).company_name%>
     <%= company.contact_email %><br />
     <%= company.booth_number %><br />
