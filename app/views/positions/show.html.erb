@@ -30,7 +30,14 @@
   <%= @position.deadline %>
 </p>
 
-<%= render '@docs' %>
+<p>
+<b>Required documents:</b> <br />
+<% @position.requires.each do |require| %>
+	<%= Document.find_by_document_id(require.document_id).document_name%>
+	<%= require.doc_type %><br />
+<% end %>
+</p>
+
 
 
 <!--<%= link_to 'Edit', edit_position_path(@position) %> |
