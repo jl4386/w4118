@@ -38,6 +38,23 @@
 </p>
 
 <p>
+<b>My Activity:</b> <br />
+<table>
+  <tr>
+    <th>Position</th>
+	<th>Company</th>
+    <th>Status</th>
+  </tr>
+<% @user.applies.each do |application| %>
+  <tr>
+    <td><%= Position.find_by_position_id(application.position_id).position_name%></td>
+    <td><%= Position.find_by_position_id(application.position_id).company.company_name%></td>
+    <td><%= application.status %><br /></td>
+<% end %>
+</p>
+
+
+<p>
   <%= link_to 'Recent Career Fairs', career_fairs_path %>
 </p>
 
