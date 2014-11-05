@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141104043151) do
+ActiveRecord::Schema.define(:version => 20141105090916) do
 
   create_table "apply", :id => false, :force => true do |t|
     t.integer "position_id",               :precision => 38, :scale => 0, :null => false
@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(:version => 20141104043151) do
     t.string   "position_name", :limit => 30,                                :null => false
     t.integer  "company_id",                  :precision => 38, :scale => 0, :null => false
     t.string   "category",      :limit => 20
-    t.string   "type",          :limit => 20,                                :null => false
+    t.string   "jobtype",       :limit => 20,                                :null => false
     t.datetime "deadline"
   end
 
@@ -99,9 +99,11 @@ ActiveRecord::Schema.define(:version => 20141104043151) do
     t.datetime "date_of_birth"
     t.float    "overall_gpa",        :limit => 63
     t.string   "password_digest"
+    t.string   "remember_token"
   end
 
   add_index "users", ["email"], :name => "sys_c00266721", :unique => true
+  add_index "users", ["remember_token"], :name => "index_users_on_remember_token"
 
   add_foreign_key "apply", "positions", :primary_key => nil, :name => "sys_c00485477", :dependent => :delete
   add_foreign_key "apply", "users", :primary_key => nil, :name => "sys_c00485478", :dependent => :delete
