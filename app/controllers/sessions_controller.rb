@@ -1,8 +1,5 @@
 class SessionsController < ApplicationController
 	def new
-		if signed_in?
-			redirect_to current_user
-		end
 	end
 
 	def create
@@ -11,7 +8,7 @@ class SessionsController < ApplicationController
 			sign_in user
 			redirect_back_or user
 		else
-			render 'new'
+			render 'company#index'
 		end
 	end
 
