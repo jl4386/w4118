@@ -14,45 +14,65 @@
 </p>
 
 <p>
-  <b>Degree</b>
+  <b>Degree:</b>
   <%= @user.degree %>
 </p>
 
 <p>
-  <b>Graduation Year</b>
+  <b>Graduation Year:</b>
   <%= @user.year_of_graduation %>
 </p>
 
 <p>
-  <b>Birth Date</b>
-  <%= @user.date_of_birth %>
+  <b>Birth Date:</b>
+  <%= @user.date_of_birth.to_date %>
 </p>
 
 <p>
-  <b>Overall gpa</b>
+  <b>Overall gpa:</b>
   <%= @user.overall_gpa %>
+</p>
+
+<p>
+<table>
+  <caption><b>My Skills</b></caption>
+  <tr>
+    <th>Skills</th>
+	  <th>Proficiency</th>
+  </tr>
+  <tr>
+    <% @user.possesses.each do |possesses| %>
+    <td><%= Skill.find_by_skill_id(possesses.skill_id).skill_name%></td>
+    <td><%= possesses.proficiency%></td>
+
+  </tr>
+<% end %>
+</table>
+
+
+
+<table>
+  <caption><b>My Activity</b></caption>
+  <tr>
+    <th>Position</th>
+    <th>Company</th>
+    <th>Status</th>
+  </tr>
+
+  <tr>
+    <% @user.applies.each do |application| %>
+    <td><%= Position.find_by_position_id(application.position_id).position_name%></td>
+    <td><%= Position.find_by_position_id(application.position_id).company.company_name%></td>
+    <td><%= application.status %><br /></td>
+
+  </tr>
+<% end %>
+</table>
 </p>
 
 <p>
   <%= link_to 'Available Positions', positions_path %>
 </p>
-
-<p>
-<b>My Activity:</b> <br />
-<table>
-  <tr>
-    <th>Position</th>
-	<th>Company</th>
-    <th>Status</th>
-  </tr>
-<% @user.applies.each do |application| %>
-  <tr>
-    <td><%= Position.find_by_position_id(application.position_id).position_name%></td>
-    <td><%= Position.find_by_position_id(application.position_id).company.company_name%></td>
-    <td><%= application.status %><br /></td>
-<% end %>
-</p>
-
 
 <p>
   <%= link_to 'Recent Career Fairs', career_fairs_path %>
