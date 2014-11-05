@@ -14,7 +14,7 @@ class PositionsController < ApplicationController
   # GET /positions/1.json
   def show
     @position = Position.find(params[:id])
-	@company = Company.find_by_company_id(@position.company_id)
+	#@company = Company.find_by_company_id(@position.company_id)
 
     respond_to do |format|
       format.html # show.html.erb
