@@ -2,8 +2,8 @@
 
 <table>
   <tr>
-    <th>Activity</th>
-    <th>Fair</th>
+    <!--<th>Activity</th>
+    <th>Fair</th>-->
     <th>Person in charge</th>
     <th></th>
     <th></th>
@@ -12,16 +12,16 @@
 
 <% @career_fairs.each do |career_fair| %>
   <tr>
-    <td><%= career_fair.activity_id %></td>
-    <td><%= career_fair.fair_id %></td>
+    <!--<td><%= career_fair.activity_id %></td>
+    <td><%= career_fair.fair_id %></td>-->
     <td><%= career_fair.person_in_charge %></td>
     <td><%= link_to 'Show', career_fair %></td>
-    <td><%= link_to 'Edit', edit_career_fair_path(career_fair) %></td>
-    <td><%= link_to 'Destroy', career_fair, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <!--<td><%= link_to 'Edit', edit_career_fair_path(career_fair) %></td>
+    <td><%= link_to 'Destroy', career_fair, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Career fair', new_career_fair_path %>
+<!--<%= link_to 'New Career fair', new_career_fair_path %>-->

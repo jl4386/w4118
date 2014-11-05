@@ -1,7 +1,48 @@
-<%= @user.name %>,
-<%= @user.email%>,
-<%= @user.major %>,
-<%= @user.degree %>,
-<%= @user.year_of_graduation %>,
-<%= @user.date_of_birth %>,
-<%= @user.overall_gpa %>
+<p>
+  <b>User name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>Major:</b>
+  <%= @user.major %>
+</p>
+
+<p>
+  <b>Degree</b>
+  <%= @user.degree %>
+</p>
+
+<p>
+  <b>Graduation Year</b>
+  <%= @user.year_of_graduation %>
+</p>
+
+<p>
+  <b>Birth Date</b>
+  <%= @user.date_of_birth %>
+</p>
+
+<p>
+  <b>Overall gpa</b>
+  <%= @user.overall_gpa %>
+</p>
+
+<p>
+  <%= link_to 'Available Positions', positions_path %>
+</p>
+
+<p>
+  <%= link_to 'Recent Career Fairs', career_fairs_path %>
+</p>
+
+<p>
+  <%= link_to 'Recent Info Sessions', info_sessions_path %>
+</p>
+
+

@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <th>Company</th>
+    <!--<th>Company</th>-->
     <th>Company name</th>
     <th>Headquarter location</th>
     <th>Website</th>
@@ -13,17 +13,17 @@
 
 <% @companies.each do |company| %>
   <tr>
-    <td><%= company.company_id %></td>
+    <!--<td><%= company.company_id %></td>-->
     <td><%= company.company_name %></td>
     <td><%= company.headquarter_location %></td>
     <td><%= company.website %></td>
     <td><%= link_to 'Show', company %></td>
-    <td><%= link_to 'Edit', edit_company_path(company) %></td>
-    <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <!--<td><%= link_to 'Edit', edit_company_path(company) %></td>
+    <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Company', new_company_path %>
+<!--<%= link_to 'New Company', new_company_path %>-->
