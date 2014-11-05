@@ -32,9 +32,15 @@
 
 <p>
 <b>Required documents:</b> <br />
+<table>
+  <tr>
+    <th>Document Name</th>
+    <th>Document Type</th>
+  </tr>
 <% @position.requires.each do |require| %>
-	<%= Document.find_by_document_id(require.document_id).document_name%>
-	<%= require.doc_type %><br />
+  <tr>
+    <td><%= Document.find_by_document_id(require.document_id).document_name%></td>
+    <td><%= require.doc_type %><br /></td>
 <% end %>
 </p>
 
