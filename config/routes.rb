@@ -32,12 +32,7 @@ W4111::Application.routes.draw do
   resources :companies
 
 
-  resources :positions do
-    member do
-      get :required_doc
-    end
-  end
-
+  resources :positions 
 
 
 	resources :users
