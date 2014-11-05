@@ -19,6 +19,12 @@ W4111::Application.routes.draw do
 
 	resources :users
 
+	resources :sessions, only: [:new, :create]
+
+	match '/signin', to: 'users#new'
+	match '/signup', to: 'sessions#new'
+	match '/signout', to: 'sessions#destroy', via: :delete
+
 	
 
   # The priority is based upon order of creation:
