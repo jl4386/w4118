@@ -31,8 +31,8 @@
 </p>
 
 <p>
-<b>Required documents:</b> <br />
 <table>
+  <caption><b>Required documents</b></caption>
   <tr>
     <th>Document Name</th>
     <th>Document Type</th>
@@ -41,6 +41,22 @@
   <tr>
     <td><%= Document.find_by_document_id(require.document_id).document_name%></td>
     <td><%= require.doc_type %><br /></td>
+<% end %>
+</p>
+
+<p>
+<table>
+  <caption><b>Skills Requirement</b></caption>
+  <tr>
+    <th>Skill</th>
+    <th>Proficiency</th>
+    <th>Importance</th>
+  </tr>
+<% @position.prefers.each do |prefer| %>
+  <tr>
+    <td><%= Skill.find_by_skill_id(prefer.skill_id).skill_name%></td>
+    <td><%= prefer.proficiency %><br /></td>
+    <td><%= prefer.importance %><br /></td>
 <% end %>
 </p>
 
