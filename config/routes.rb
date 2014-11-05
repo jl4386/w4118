@@ -1,4 +1,6 @@
 W4111::Application.routes.draw do
+  resources :requires
+
   resources :recruitment_activities
 
 
@@ -18,7 +20,12 @@ W4111::Application.routes.draw do
   resources :companies
 
 
-  resources :positions
+  resources :positions do
+    member do
+      get :required_doc
+    end
+  end
+
 
 
 	resources :users

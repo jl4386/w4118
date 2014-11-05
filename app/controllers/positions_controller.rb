@@ -14,6 +14,7 @@ class PositionsController < ApplicationController
   # GET /positions/1.json
   def show
     @position = Position.find(params[:id])
+    @docs = @position.required_doc
 	#@company = Company.find_by_company_id(@position.company_id)
 
     respond_to do |format|
@@ -80,5 +81,9 @@ class PositionsController < ApplicationController
       format.html { redirect_to positions_url }
       format.json { head :no_content }
     end
+  end
+  def required_doc
+    @position = Position.find(params[:id])
+    @docs = @position.required_doc
   end
 end
