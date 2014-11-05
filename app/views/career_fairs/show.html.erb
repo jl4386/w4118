@@ -38,10 +38,10 @@
 <p>
 <b>Company List:</b> <br />
 
-<% @career_fair.paticipates.each do |company| %>
-    <%= Company.find_by_activity_id(company.activity_id).company_name%>
-    <%= company.contact_email %><br />
-    <%= company.booth_number %><br />
+<% @career_fair.participates.each do |company_list| %>
+    <%= Company.find_by_company_id(company_list.company_id).company_name%>
+    <%= company_list.contact_email %><br />
+    <%= company_list.booth_number %><br />
 <% end %>
 </p>
 
