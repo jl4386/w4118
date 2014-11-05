@@ -4,6 +4,8 @@
   <tr>
     <!--<th>Activity</th>
     <th>Fair</th>-->
+    <th>Career Fair Name</th>
+    <th>Date</th>
     <th>Person in charge</th>
     <th></th>
     <th></th>
@@ -14,6 +16,8 @@
   <tr>
     <!--<td><%= career_fair.activity_id %></td>
     <td><%= career_fair.fair_id %></td>-->
+    <td><%= career_fair.activity.activity_name %></td>
+    <td><%= career_fair.activity.activity_date.to_date %></td>
     <td><%= career_fair.person_in_charge %></td>
     <td><%= link_to 'Show', career_fair %></td>
     <!--<td><%= link_to 'Edit', edit_career_fair_path(career_fair) %></td>

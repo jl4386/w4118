@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Activity:</b>
+  <%= @recruitment_activity.activity_id %>
+</p>
+
+<p>
+  <b>Activity name:</b>
+  <%= @recruitment_activity.activity_name %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @recruitment_activity.location %>
+</p>
+
+<p>
+  <b>Dress code:</b>
+  <%= @recruitment_activity.dress_code %>
+</p>
+
+<p>
+  <b>Activity date:</b>
+  <%= @recruitment_activity.activity_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_recruitment_activity_path(@recruitment_activity) %> |
+<%= link_to 'Back', recruitment_activities_path %>

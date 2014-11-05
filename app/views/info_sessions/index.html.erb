@@ -3,7 +3,9 @@
 <table>
   <tr>
     <!--<th>Activity</th>
-    <th>Session</th>--> 
+    <th>Session</th>-->
+    <th>Info Session Name</th> 
+    <th>Date</th> 
     <th>Host company</th>
     <th>Contact email</th>
     <th>Food</th>
@@ -16,6 +18,8 @@
   <tr>
     <!--<td><%= info_session.activity_id %></td>
     <td><%= info_session.session_id %></td>-->
+    <td><%= info_session.activity.activity_name %></td>
+    <td><%= info_session.activity.activity_date.to_date %></td>
     <td><%= info_session.company.company_name %></td>
     <td><%= info_session.contact_email %></td>
     <td><%= info_session.food %></td>

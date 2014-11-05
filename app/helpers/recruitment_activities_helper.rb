@@ -1,0 +1,2 @@
+module RecruitmentActivitiesHelper
+end

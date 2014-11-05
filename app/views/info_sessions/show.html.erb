@@ -11,9 +11,30 @@
 </p>
 -->
 <p>
+  <b>Info Session Name:</b>
+  <%= @info_session.activity.activity_name %>
+</p>
+
+<p>
   <b>Host company:</b>
   <%= link_to @info_session.company.company_name, company_path(@info_session.company) %>
 </p>
+
+<p>
+  <b>Date:</b>
+  <%= @info_session.activity.activity_date.to_date %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @info_session.activity.location %>
+</p>
+
+<p>
+  <b>Dress Code:</b>
+  <%= @info_session.activity.dress_code %>
+</p>
+
 
 <p>
   <b>Contact email:</b>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  activity_id: 1
+  activity_name: MyString
+  location: MyString
+  dress_code: MyString
+  activity_date: 2014-11-05 03:28:45
+
+two:
+  activity_id: 1
+  activity_name: MyString
+  location: MyString
+  dress_code: MyString
+  activity_date: 2014-11-05 03:28:45

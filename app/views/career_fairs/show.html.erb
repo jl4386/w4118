@@ -11,6 +11,26 @@
 </p>
 -->
 <p>
+  <b>Career Fair Name:</b>
+  <%= @career_fair.activity.activity_name %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @career_fair.activity.activity_date.to_date %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @career_fair.activity.location %>
+</p>
+
+<p>
+  <b>Dress Code:</b>
+  <%= @career_fair.activity.dress_code %>
+</p>
+
+<p>
   <b>Person in charge:</b>
   <%= @career_fair.person_in_charge %>
 </p>
