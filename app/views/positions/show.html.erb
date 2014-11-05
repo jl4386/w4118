@@ -12,7 +12,7 @@
 
 <p>
   <b>Company:</b>
-  <%= @company.company_name %>
+  <%= link_to @position.company.company_name, company_path(@position.company) %>
 </p>
 
 <p>
