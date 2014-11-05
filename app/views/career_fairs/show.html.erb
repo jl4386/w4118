@@ -35,6 +35,15 @@
   <%= @career_fair.person_in_charge %>
 </p>
 
+<p>
+<b>Company List:</b> <br />
+
+<% @career_fair.paticipates.each do |company| %>
+    <%= Company.find_by_activity_id(company.activity_id).company_name%>
+    <%= company.contact_email %><br />
+    <%= company.booth_number %><br />
+<% end %>
+</p>
 
 <!--<%= link_to 'Edit', edit_career_fair_path(@career_fair) %> |
 <%= link_to 'Back', career_fairs_path %>-->

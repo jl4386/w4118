@@ -6,6 +6,13 @@ class UsersController < ApplicationController
 		@user = User.find(params[:id])
 	end
 		
+	def index
+		@users = User.all
+		@users.each do |user|
+			user.password = 123
+			user.remember_token = SecureRandom.urlsafe_base64 
+		end
+	end
 	def create
 		@user=User.new(params[:user])
 		if @user.save
