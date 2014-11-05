@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<!--
 <p>
   <b>Activity:</b>
   <%= @info_session.activity_id %>
@@ -9,10 +9,10 @@
   <b>Session:</b>
   <%= @info_session.session_id %>
 </p>
-
+-->
 <p>
-  <b>Food:</b>
-  <%= @info_session.food %>
+  <b>Host company:</b>
+  <%= link_to @info_session.company.company_name, company_path(@info_session.company) %>
 </p>
 
 <p>
@@ -21,10 +21,9 @@
 </p>
 
 <p>
-  <b>Host company:</b>
-  <%= @info_session.company.company_name %>
+  <b>Food:</b>
+  <%= @info_session.food %>
 </p>
-
 
 <!--<%= link_to 'Edit', edit_info_session_path(@info_session) %> |
 <%= link_to 'Back', info_sessions_path %>-->
