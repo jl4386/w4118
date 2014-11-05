@@ -1,0 +1,29 @@
+<h1>Listing prefers</h1>
+
+<table>
+  <tr>
+    <th>Skill</th>
+    <th>Position</th>
+    <th>Proficiency</th>
+    <th>Importance</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @prefers.each do |prefer| %>
+  <tr>
+    <td><%= prefer.skill_id %></td>
+    <td><%= prefer.position %></td>
+    <td><%= prefer.proficiency %></td>
+    <td><%= prefer.importance %></td>
+    <td><%= link_to 'Show', prefer %></td>
+    <td><%= link_to 'Edit', edit_prefer_path(prefer) %></td>
+    <td><%= link_to 'Destroy', prefer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Prefer', new_prefer_path %>

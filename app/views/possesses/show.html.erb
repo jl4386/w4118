@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Skill:</b>
+  <%= @possess.skill_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @possess.user_id %>
+</p>
+
+<p>
+  <b>Integer:</b>
+  <%= @possess.integer %>
+</p>
+
+<p>
+  <b>Proficiency:</b>
+  <%= @possess.proficiency %>
+</p>
+
+
+<%= link_to 'Edit', edit_possess_path(@possess) %> |
+<%= link_to 'Back', possesses_path %>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Position:</b>
+  <%= @apply.position_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @apply.user_id %>
+</p>
+
+<p>
+  <b>Integer:</b>
+  <%= @apply.integer %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @apply.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_apply_path(@apply) %> |
+<%= link_to 'Back', applies_path %>

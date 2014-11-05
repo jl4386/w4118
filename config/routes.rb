@@ -1,4 +1,16 @@
 W4111::Application.routes.draw do
+  resources :participates
+
+
+  resources :prefers
+
+
+  resources :applies
+
+
+  resources :possesses
+
+
   resources :requires
 
   resources :recruitment_activities

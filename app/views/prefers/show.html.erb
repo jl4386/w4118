@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Skill:</b>
+  <%= @prefer.skill_id %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @prefer.position %>
+</p>
+
+<p>
+  <b>Proficiency:</b>
+  <%= @prefer.proficiency %>
+</p>
+
+<p>
+  <b>Importance:</b>
+  <%= @prefer.importance %>
+</p>
+
+
+<%= link_to 'Edit', edit_prefer_path(@prefer) %> |
+<%= link_to 'Back', prefers_path %>

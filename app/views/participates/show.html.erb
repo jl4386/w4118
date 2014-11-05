@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Activity:</b>
+  <%= @participate.activity_id %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @participate.company_id %>
+</p>
+
+<p>
+  <b>Contact email:</b>
+  <%= @participate.contact_email %>
+</p>
+
+<p>
+  <b>Booth:</b>
+  <%= @participate.booth %>
+</p>
+
+
+<%= link_to 'Edit', edit_participate_path(@participate) %> |
+<%= link_to 'Back', participates_path %>

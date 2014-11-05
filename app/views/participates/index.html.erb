@@ -1,0 +1,29 @@
+<h1>Listing participates</h1>
+
+<table>
+  <tr>
+    <th>Activity</th>
+    <th>Company</th>
+    <th>Contact email</th>
+    <th>Booth</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @participates.each do |participate| %>
+  <tr>
+    <td><%= participate.activity_id %></td>
+    <td><%= participate.company_id %></td>
+    <td><%= participate.contact_email %></td>
+    <td><%= participate.booth %></td>
+    <td><%= link_to 'Show', participate %></td>
+    <td><%= link_to 'Edit', edit_participate_path(participate) %></td>
+    <td><%= link_to 'Destroy', participate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Participate', new_participate_path %>
