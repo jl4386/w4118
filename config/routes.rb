@@ -1,4 +1,7 @@
 W4111::Application.routes.draw do
+  resources :recruitment_activities
+
+
   root :to => 'sessions#new'
 
   resources :skills

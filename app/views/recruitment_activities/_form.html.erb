@@ -1,0 +1,37 @@
+<%= form_for(@recruitment_activity) do |f| %>
+  <% if @recruitment_activity.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@recruitment_activity.errors.count, "error") %> prohibited this recruitment_activity from being saved:</h2>
+
+      <ul>
+      <% @recruitment_activity.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :activity_id %><br />
+    <%= f.number_field :activity_id %>
+  </div>
+  <div class="field">
+    <%= f.label :activity_name %><br />
+    <%= f.text_field :activity_name %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :dress_code %><br />
+    <%= f.text_field :dress_code %>
+  </div>
+  <div class="field">
+    <%= f.label :activity_date %><br />
+    <%= f.datetime_select :activity_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

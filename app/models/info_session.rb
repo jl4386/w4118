@@ -3,4 +3,7 @@ class InfoSession < ActiveRecord::Base
   def company
   	Company.find_by_company_id(host_company)
   end
+  def activity
+  	RecruitmentActivity.find_by_activity_id(activity_id)
+  end
 end

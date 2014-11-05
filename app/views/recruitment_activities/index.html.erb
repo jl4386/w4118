@@ -1,0 +1,31 @@
+<h1>Listing recruitment_activities</h1>
+
+<table>
+  <tr>
+    <th>Activity</th>
+    <th>Activity name</th>
+    <th>Location</th>
+    <th>Dress code</th>
+    <th>Activity date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @recruitment_activities.each do |recruitment_activity| %>
+  <tr>
+    <td><%= recruitment_activity.activity_id %></td>
+    <td><%= recruitment_activity.activity_name %></td>
+    <td><%= recruitment_activity.location %></td>
+    <td><%= recruitment_activity.dress_code %></td>
+    <td><%= recruitment_activity.activity_date %></td>
+    <td><%= link_to 'Show', recruitment_activity %></td>
+    <td><%= link_to 'Edit', edit_recruitment_activity_path(recruitment_activity) %></td>
+    <td><%= link_to 'Destroy', recruitment_activity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Recruitment activity', new_recruitment_activity_path %>

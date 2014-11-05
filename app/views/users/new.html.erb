@@ -44,7 +44,7 @@
 
   <div class="field"><br />
 	<%=f.label :date_of_birth%>
-	<%=f.datetime_select:date_of_birth%>
+	<%=f.datetime_select:date_of_birth, {:start_year => 1980, :end_year => Time.now.year, :discard_hour=>true, :discard_minute=>true}%>
  </div>
   <div class="field"><br />
 	<%=f.label :overall_gpa%>
