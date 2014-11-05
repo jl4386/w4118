@@ -18,10 +18,10 @@
     <td><%= info_session.session_id %></td>
     <td><%= info_session.food %></td>
     <td><%= info_session.contact_email %></td>
-    <td><%= info_session.host_company %></td>
+    <td><%= info_session.company.company_name %></td>
     <td><%= link_to 'Show', info_session %></td>
-    <td><%= link_to 'Edit', edit_info_session_path(info_session) %></td>
-    <td><%= link_to 'Destroy', info_session, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <!--<td><%= link_to 'Edit', edit_info_session_path(info_session) %></td>
+    <td><%= link_to 'Destroy', info_session, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
   </tr>
 <% end %>
 </table>
