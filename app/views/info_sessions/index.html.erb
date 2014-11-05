@@ -2,11 +2,11 @@
 
 <table>
   <tr>
-    <th>Activity</th>
-    <th>Session</th>
-    <th>Food</th>
-    <th>Contact email</th>
+    <!--<th>Activity</th>
+    <th>Session</th>--> 
     <th>Host company</th>
+    <th>Contact email</th>
+    <th>Food</th>
     <th></th>
     <th></th>
     <th></th>
@@ -14,11 +14,11 @@
 
 <% @info_sessions.each do |info_session| %>
   <tr>
-    <td><%= info_session.activity_id %></td>
-    <td><%= info_session.session_id %></td>
-    <td><%= info_session.food %></td>
-    <td><%= info_session.contact_email %></td>
+    <!--<td><%= info_session.activity_id %></td>
+    <td><%= info_session.session_id %></td>-->
     <td><%= info_session.company.company_name %></td>
+    <td><%= info_session.contact_email %></td>
+    <td><%= info_session.food %></td>
     <td><%= link_to 'Show', info_session %></td>
     <!--<td><%= link_to 'Edit', edit_info_session_path(info_session) %></td>
     <td><%= link_to 'Destroy', info_session, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
@@ -28,4 +28,4 @@
 
 <br />
 
-<%= link_to 'New Info session', new_info_session_path %>
+<!--<%= link_to 'New Info session', new_info_session_path %>-->
