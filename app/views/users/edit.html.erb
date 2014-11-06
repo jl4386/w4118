@@ -38,7 +38,8 @@
 	<%= f.label :overall_gpa %>
 	<%= f.text_field :overall_gpa %>
 </div>
-<div class="field">
-	<%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
-	<% end %>
+<div class="actions">
+	<%= f.submit "Save changes"%>
 </div>	
+<% end %>
+<%= link_to 'Back', @user %>
