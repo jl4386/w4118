@@ -44,7 +44,6 @@
     <% @user.possesses.each do |possesses| %>
     <td><%= Skill.find_by_skill_id(possesses.skill_id).skill_name%></td>
     <td><%= possesses.proficiency%></td>
-
   </tr>
 <% end %>
 </table>
@@ -68,6 +67,10 @@
   </tr>
 <% end %>
 </table>
+</p>
+
+<p>
+  <%= link_to 'Update Profile', edit_user_path(@user) %>
 </p>
 
 <p>
