@@ -36,7 +36,6 @@ W4111::Application.routes.draw do
 
 
 	resources :users
-
 	resources :sessions, only: [:new, :create]
 
 	match '/signup', to: 'users#new'

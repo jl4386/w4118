@@ -61,7 +61,10 @@
 <% end %>
 </table>
 </p>
-<%= link_to 'Apply'%>
 
-<!--<%= link_to 'Edit', edit_position_path(@position) %> |
-<%= link_to 'Back', positions_path %>-->
+
+<%= current_user.user_id %><%=@position.position_id%>
+<%= form_for(current_user.applies.build(position_id: @position.position_id)) do |w| %> 
+<div><%= w.hidden_field :position_id %></div>
+<%= w.submit "Apply"%>
+<%end%>

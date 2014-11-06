@@ -37,21 +37,14 @@ class AppliesController < ApplicationController
     @apply = Apply.find(params[:id])
   end
 
-  # POST /applies
-  # POST /applies.json
-  def create
-    @apply = Apply.new(params[:apply])
-
-    respond_to do |format|
-      if @apply.save
-        format.html { redirect_to @apply, notice: 'Apply was successfully created.' }
-        format.json { render json: @apply, status: :created, location: @apply }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @apply.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+def create
+	@position = Position.find(params[:apply][:position_id]) 
+	current_user.apply!(@position.position_id)
+	respond_to do |format|
+		format.html {redirect_to current_user}
+		format.js
+	end
+end
 
   # PUT /applies/1
   # PUT /applies/1.json
